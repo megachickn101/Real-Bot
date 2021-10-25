@@ -1,3 +1,6 @@
+#note: This is built for 1 server use.
+
+
 import discord
 from discord.ext import commands
 from discord.utils import get
@@ -30,7 +33,7 @@ async def on_message(message):
     await client.process_commands(message)
 
 def is_it_me(ctx):
-	return ctx.author.id == 601881016461819907
+	return ctx.author.id == 
 
 @client.command()
 @commands.check(is_it_me)
